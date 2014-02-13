@@ -27,6 +27,10 @@ function addProjectDetails(e) {
 	var idNumber = projectID.substr('project'.length);
 
 	console.log("User clicked on project " + idNumber);
+
+
+	$.get('/project/'+ idNumber,showProject); 
+	console.log()
 }
 
 /*
@@ -36,3 +40,4 @@ function addProjectDetails(e) {
 function randomizeColors(e) {
 	console.log("User clicked on color button");
 }
+
